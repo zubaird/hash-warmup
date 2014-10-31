@@ -4,4 +4,6 @@ require_relative 'people'
 #
 # HINT: Start by finding who joe is sitting next to, then find that person in the hash.
 
-puts PEOPLE["joe"][:sitting_next_to]
+
+sue = PEOPLE["joe"][:sitting_next_to].to_s
+puts PEOPLE[sue][:last_name]
